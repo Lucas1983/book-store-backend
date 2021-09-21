@@ -1,1 +1,1 @@
-# car-rental-backend
+# book-store-backend
