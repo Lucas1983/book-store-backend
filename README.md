@@ -28,7 +28,7 @@ $ cd ../book-store-backend
 $ ./gradlew build
 ```
 ### Launch
-To run project use included gradle wrapper
+To run project execute following commnads
 ```
 $ cd ../book-store-backend/build/libs
 $ java -jar book-store-0.0.1-SNAPSHOT.jar
