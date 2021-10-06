@@ -4,7 +4,6 @@ import com.github.javafaker.Faker;
 import com.store.business.repository.BookRepository;
 import com.store.data.model.Book;
 import java.util.stream.Stream;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -14,7 +13,7 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class DataLoader implements ApplicationRunner {
 
-  private Faker faker = Faker.instance();
+  private final Faker faker = Faker.instance();
   private final BookRepository bookRepository;
 
   @Override
