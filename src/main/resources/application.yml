@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: create-drop
+    show-sql: false
+
+server:
+  ssl:
+    enabled: true #enable/disable https
+    protocol: TLS # SSL protocol to use.
+    enabled-protocols: TLSv1.2 # Enabled SSL protocols.
+    ciphers: TLS_RSA_WITH_AES_128_CBC_SHA256, ADD_OTHER_CIPHERS_IF_REQUIRED #ssl ciphers
