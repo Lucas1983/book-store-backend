@@ -4,7 +4,7 @@ spring:
     hibernate.ddl-auto: create-drop
     show-sql: false
 server:
-  port: 443
+  port: 8443
   ssl:
     enabled: true #enable/disable https
     protocol: TLS # SSL protocol to use.
