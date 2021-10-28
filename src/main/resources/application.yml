@@ -3,10 +3,16 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.ddl-auto: create-drop
     show-sql: false
-
 server:
+  port: 443
   ssl:
     enabled: true #enable/disable https
     protocol: TLS # SSL protocol to use.
     enabled-protocols: TLSv1.2 # Enabled SSL protocols.
-    ciphers: TLS_RSA_WITH_AES_128_CBC_SHA256, ADD_OTHER_CIPHERS_IF_REQUIRED #ssl ciphers
+    key-store-type: PKCS12 # The format used for the keystore.
+    key-store: classpath:akademia-backend-jks.p12 # The path to the keystore containing the certificate
+    key-alias: akademia-backend-jks # The password used to generate the certificate
+    key-store-password: akademia-backend # The alias mapped to the certificate
+
+
+
