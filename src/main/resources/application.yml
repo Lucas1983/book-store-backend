@@ -14,7 +14,8 @@ server:
     key-alias: akademia-backend-jks # The password used to generate the certificate
     key-store-password: akademia-backend # The alias mapped to the certificate
 logging:
-  file: application.log
+  file:
+    name: application.log
 
 
 
